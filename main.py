@@ -16,7 +16,7 @@ word_list = [row.values[0] for (index, row) in words.iterrows()]
 
 
 def restart():
-    global start_counter, test_counter, word_counter, timer, active_word, wrong_words_counter, character_counter
+    global word_counter, timer, active_word, wrong_words_counter, character_counter
     window.after_cancel(timer)
     canvas.itemconfig(screen_counter, text="")
     user_entry.delete(0, END)
